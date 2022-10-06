@@ -1,3 +1,21 @@
+Todo with larael 9 and vue 3 with scantum authentication This project is just for testing purpose, but can be used to scale up for any kind of live envirenment.
+
+to setup this you need php 8.1+ npm 8+
+
+then clone this project and write `composer install` and then `npm install`
+
+after then run `php artisan migrate`
+
+then start php server by `php artisan serve` followed by `npm run dev`
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
