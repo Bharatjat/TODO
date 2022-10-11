@@ -68,7 +68,7 @@ export default {
     beforeCreate() {
         let ref = this;
         if (window.Laravel.isLogin) {
-            window.location.href = "/dashbord";
+            window.location.href = "/dashboard";
             // ref.$router.push({ name: 'Dashbord' });
             ref.$emit('changeLogin', true);
         }

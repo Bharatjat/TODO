@@ -8,6 +8,14 @@ after then run `php artisan migrate`
 
 then start php server by `php artisan serve` followed by `npm run dev`
 
+latest implementation of Brodcaster, event and listener 
+
+By implementing this this single app can be used on many machines/windows at a single time with autoupdate.
+
+This mean's that if a user update any data from machine/window's `A` than that updated data will also be reflected to machine/window's `B` automatically without any refresh of page.
+
+For running this you have to reun the web socket command `php artisan websockets:serve`.
+
 
 
 

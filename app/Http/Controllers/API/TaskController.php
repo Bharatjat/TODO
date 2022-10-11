@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Task;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
+use App\Events\TodoCreatedOrUpdated;
 
 class TaskController extends Controller
 {
@@ -29,6 +30,8 @@ class TaskController extends Controller
         $task->description = $data['task'];
         $task->user_id = $loginUser->id;
         $task->save();
+
+        broadcast(new TodoCreatedOrUpdated());
 
         return [
             'status' => 200,
@@ -73,6 +76,8 @@ class TaskController extends Controller
             $status = 401;
             $message = $th->getMessage();
         }
+
+        broadcast(new TodoCreatedOrUpdated());
 
         return [
             'status' => $status,

@@ -17,6 +17,8 @@
     "dependencies": {
         "axios": "^0.27.2",
         "bootstrap-vue": "^2.22.0",
+        "laravel-echo": "^1.14.0",
+        "pusher-js": "^7.4.0",
         "router": "^2.0.0-beta.1",
         "vue": "^3.2.40",
         "vue-loader": "^17.0.0",

@@ -56,6 +56,10 @@ export default {
     created() {
         let ref = this;
         ref.getTask();
+
+        window.Echo.private("updateTodo").listen("TodoCreatedOrUpdated", e => {
+            ref.getTask();
+        });
     },
     methods: {
         addNewTask() {
@@ -123,7 +127,8 @@ export default {
         archive(id) {
             let ref = this;
             console.log(id);
-        }
+        },
+        
     },
     mounted() {
         let ref = this;
